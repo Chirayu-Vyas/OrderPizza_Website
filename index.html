@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- navigationbar -->
+        <nav>  
+            <div class="logo">Pizza World</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Pizza World</h1>
+            <p>Order your favorite pizzas now!</p>
+            <a href="#menu" class="btn">Order Now</a>
+        </div>
+    </header>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="pizza1.jpg" alt="Pizza">
+                <h3>Pepperoni Pizza</h3>
+                <p>Classic pepperoni pizza with mozzarella cheese and tomato sauce.</p>
+                <span class="price">Rs. 499</span>
+                <a href="#" class="btn btn-add-to-cart">Add to Cart</a>
+            </div>
+            <div class="menu-item">
+                <img src="pizza2.jpg" alt="Pizza">
+                <h3>Veggie Supreme</h3>
+                <p>Fresh vegetables including bell peppers, onions, olives, and mushrooms.</p>
+                <span class="price">Rs. 589</span>
+                <a href="#" class="btn btn-add-to-cart">Add to Cart</a>
+            </div>
+            <div class="menu-item">
+                <img src="pizza3.jpg" alt="Pizza">
+                <h3>BBQ Chicken Pizza</h3>
+                <p>Tender chicken, tangy BBQ sauce, onions, and cilantro.</p>
+                <span class="price">Rs. 599</span>
+                <a href="#" class="btn btn-add-to-cart">Add to Cart</a>
+            </div>
+            <div class="menu-item">
+                <img src="pizza4.jpg" alt="Pizza">
+                <h3>Hawaiian Pizza</h3>
+                <p>Canadian bacon, pineapple, and mozzarella cheese.</p>
+                <span class="price">Rs. 799</span>
+                <a href="#" class="btn btn-add-to-cart">Add to Cart</a>
+            </div>
+            <div class="menu-item">
+                <img src="pizza5.jpg" alt="Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Simple and classic with tomatoes, fresh mozzarella, and basil.</p>
+                <span class="price">Rs. 599</span>
+                <a href="#" class="btn btn-add-to-cart">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        (function(d, m){
+            var kommunicateSettings = 
+                {"appId":"3d6c99d7e6ffc66300ab4b57b764fdee2","popupWidget":true,"automaticChatOpenOnNavigation":true};
+            var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+            s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+            var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+            window.kommunicate = m; m._globals = kommunicateSettings;
+        })(document, window.kommunicate || {});
+    /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+    </script>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Have a question or feedback? Contact us!</p>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Pizza World</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
